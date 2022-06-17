@@ -127,10 +127,6 @@ hr {
   text-align: center;
 }
 
-.linkpagecontainer a:hover {
-  background: var(--navhover);
-}
-
 .novelcontainer {
   display: flex;
   flex-direction: column;
@@ -147,6 +143,8 @@ hr {
   letter-spacing: .1rem;
   text-decoration: none;
   transition: .4s;
-  flex: auto;
-  text-align: center;
+}
+
+.linkpagecontainer a:hover, .novelcontainer a:hover {
+  background: var(--navhover);
 }
