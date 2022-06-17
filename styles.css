@@ -101,6 +101,7 @@ hr {
   background: var(--contentbackground);
   padding: 2rem;
   font-family: 'Open Sans', sans-serif;
+  border-bottom: 1px solid var(--bordercolour);
 }
 
 .linkpagetitle {
@@ -128,4 +129,24 @@ hr {
 
 .linkpagecontainer a:hover {
   background: var(--navhover);
+}
+
+.novelcontainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.novelcontainer a {
+  margin: .38rem;
+  /* padding: 1rem; */
+  padding: 1rem .8rem;
+  border-radius: 4px;
+  background: var(--navactive);
+  font-family: 'Oxygen', sans-serif;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  transition: .4s;
+  flex: auto;
+  text-align: center;
 }
