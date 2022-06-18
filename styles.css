@@ -188,7 +188,15 @@ hr {
   }
 
   .pagecontent {
+    padding: 1rem;
     margin-bottom: 52px;
     border-width: 0px;
+  }
+
+  .linkpagecontainer a {
+    padding: .8rem .6rem;
+    border-radius: 4px;
+    background: var(--navactive);
+    letter-spacing: 0rem;
   }
 }
