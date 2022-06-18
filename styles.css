@@ -148,4 +148,42 @@ hr {
   background: var(--navhover);
 }
 
-@media only screen and (hover: none) and (pointer: coarse) {}
+@media only screen and (hover: none) and (pointer: coarse) {
+  .pagecontainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    height: 75px;
+  }
+
+  .sidenav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .navcontainer {
+    position: sticky;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: var(--background);
+    border-width: 0px;
+    border-top: 1px solid var(--bordercolour);
+  }
+
+  .navitem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem .5rem;
+    transition: 0s;
+  }
+
+  .pagecontent {
+    margin-bottom: 52px;
+  }
+}
