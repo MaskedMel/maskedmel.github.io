@@ -194,7 +194,7 @@ hr {
   }
 
   .linkpagecontainer a {
-    margin: .18rem;
+    margin: .16rem;
     padding: .8rem .6rem;
     border-radius: 4px;
     background: var(--navactive);
