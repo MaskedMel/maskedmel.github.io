@@ -1,0 +1,11 @@
+Hosting:
+  Github = Free
+  Domain = 7.50
+
+Index, navigation and extra main Pages = 2.50
+
+Wikipages
+  If < 10 then 50p/wikipage
+  If > 10 then 
+  If < 20 then 35p/Wikipage
+  If < 30
