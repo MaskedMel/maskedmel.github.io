@@ -44,6 +44,10 @@ hr {
   color: var(--link);
 }
 
+.fa-link {
+  font-size: .5rem;
+}
+
 .pagecontainer {
   display: grid;
   grid-template-columns: 125px auto;
