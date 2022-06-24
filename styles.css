@@ -45,7 +45,8 @@ hr {
 }
 
 .fa-link {
-  font-size: .5rem;
+  font-size: .2rem;
+  color: var(--link);
 }
 
 .pagecontainer {
