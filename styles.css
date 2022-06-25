@@ -227,6 +227,10 @@ hr {
     height: 75px;
   }
 
+  .version {
+    right: .1rem;
+  }
+
   .sidenav {
     position: fixed;
     top: auto;
