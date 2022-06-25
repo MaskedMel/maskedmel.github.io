@@ -11,10 +11,13 @@
 </head>
 
 <body>
+  <audio id="pronounce">
+    <source src="../../audio/human.mp3" type="audio/mpeg">
+  </audio>
   <div class="pagecontainer">
     <div class="title">
       <h1>The Quasar Universe</h1>
-      <p class="version">v3.27</p>
+      <p class="version">v3.28</p>
     </div>
     <div class="sidenav">
       <div class="navcontainer">
@@ -23,12 +26,37 @@
         <a class="navitem" href="../../linkpage.html">Index</a>
         <a class="navitem" href="../../novels.html">Novels</a>
       </div>
+      <div class="creditsectioncontainer">
+        <div class="creditsection">
+          <p>Mel</p>
+        </div>
+      </div>
     </div>
     <!-- DO NOT EDIT ABOVE CODE -->
     <div class="pagecontent">
       <!-- Page content below -->
+      <h2>Human <span class="pronunciation"><i>(He-you-mun)</i>
+          <button onclick="playaudio()"><i class="fa-solid fa-volume-high"></i></button>
+        </span></h2>
+      <hr class="hr-wikipage">
+      <div class="wikipagecontent">
+        <p>
+      </div>
+      <h2><br>History</h2>
+      <hr class="hr-wikipage">
+      <div class="wikipagecontent">
 
+      </div>
       <!-- End of page content -->
     </div>
   </div>
 </body>
+<script type="text/javascript">
+  var x = document.getElementById("pronounce");
+
+  function playaudio() {
+    x.play();
+  }
+</script>
+
+</html>
