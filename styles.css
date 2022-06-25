@@ -67,6 +67,13 @@ hr {
   padding: .7rem;
 }
 
+.version {
+  position: absolute;
+  /* right: 4rem; */
+  bottom: .1rem;
+  font-size: .6rem;
+}
+
 .sidenav {
   grid-row: 2 / 3;
   display: flex;
