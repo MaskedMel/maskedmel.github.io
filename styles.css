@@ -49,6 +49,7 @@ hr {
   display: grid;
   grid-template-columns: 125px auto;
   grid-template-rows: 75px auto;
+  min-height: 100vh;
 }
 
 .title {
@@ -70,6 +71,9 @@ hr {
   grid-row: 2 / 3;
   display: flex;
   flex-direction: column;
+  height: calc(100vh - 75px);
+  position: sticky;
+  top: 0;
 }
 
 .navcontainer {
@@ -89,6 +93,29 @@ hr {
 
 .navitem:hover {
   background: var(--navhover)
+}
+
+.creditsectioncontainer {
+  position: sticky;
+  bottom: 4.8rem;
+  margin-top: auto;
+}
+
+.creditsection {
+  margin: .2rem;
+  /* margin-top: auto; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.creditsection p {
+  padding: .2rem .4rem;
+  margin: .1rem;
+  background: var(--navactive);
+  border-radius: 4px;
+  flex: auto;
+  text-align: center;
+  font-size: .8rem;
 }
 
 .active {
@@ -144,6 +171,11 @@ hr {
 
 .index-left a, .index-right a {
   margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .indexsplittop {
@@ -190,8 +222,10 @@ hr {
 
   .sidenav {
     position: fixed;
+    top: auto;
     bottom: 0;
     width: 100%;
+    height: auto;
   }
 
   .navcontainer {
@@ -211,6 +245,12 @@ hr {
     text-align: center;
     padding: 1rem .5rem;
     transition: 0s;
+  }
+
+  .creditsectioncontainer, .creditsection, .creditsection p {
+    position: fixed;
+    color: transparent;
+    background: transparent
   }
 
   .pagecontent {
