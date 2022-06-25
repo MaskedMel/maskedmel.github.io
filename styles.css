@@ -12,6 +12,7 @@ padding: .5rem 1rem;*/
   --navactive: #313442;
   --navhover: #4e5268;
   --link: #0096FF;
+  --titlefont: font-family: 'Spectral SC', serif;
 }
 
 * {
@@ -41,11 +42,6 @@ hr {
 }
 
 .link {
-  color: var(--link);
-}
-
-.fa-link {
-  font-size: .2rem;
   color: var(--link);
 }
 
@@ -109,8 +105,15 @@ hr {
   border-bottom: 1px solid var(--bordercolour);
 }
 
-.linkpagetitle {
+.linkpagetitle, .index-split-title {
   text-align: center;
+}
+
+.index-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--bordercolour);
 }
 
 .linkpagecontainer {
@@ -118,7 +121,14 @@ hr {
   flex-wrap: wrap;
 }
 
-.linkpagecontainer a {
+.index-left, .index-right {
+  display: flex;
+  flex-direction: column;
+  background: var(--contentbackground);
+  padding: 1rem;
+}
+
+.linkpagecontainer a, .index-left a, .index-right a {
   margin: .38rem;
   /* padding: 1rem; */
   padding: 1rem .8rem;
@@ -130,6 +140,14 @@ hr {
   transition: .4s;
   flex: auto;
   text-align: center;
+}
+
+.index-left a, .index-right a {
+  margin-top: 1rem;
+}
+
+.indexsplittop {
+  margin-bottom: 1rem;
 }
 
 .novelcontainer {
@@ -153,7 +171,10 @@ hr {
   background: var(--navhover);
 }
 
-@media only screen and (hover: none) and (pointer: coarse) {
+@media only screen and
+
+/* (hover: none) and (pointer: coarse)*/
+(max-width: 800px) {
   body {
     background: var(--contentbackground);
   }

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+/* font-family: 'Berkshire Swash', cursive; */
+:root {
+  --background: #F7ECDE;
+  --contentbackground: #FBF8F1;
+  --bordercolour: #E9DAC1;
+  --navactive: #D4BB9D;
+  --navhover: #E3CAA5;
+  --link: #54BAB9;
+}
+
+* {
+  color: black;
+}
+
+h1 {
+  font-family: 'Berkshire Swash', cursive;
+  letter-spacing: .1rem;
+}
