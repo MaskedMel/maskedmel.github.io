@@ -292,9 +292,7 @@ button {
   }
 
   .creditsectioncontainer, .creditsection, .creditsection p {
-    position: fixed;
-    color: transparent;
-    background: transparent
+    display: none;
   }
 
   .pagecontent {
