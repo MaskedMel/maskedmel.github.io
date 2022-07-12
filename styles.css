@@ -172,6 +172,10 @@ button {
   border-bottom: 1px solid var(--bordercolour);
 }
 
+.new-section {
+  margin-top: 2rem;
+}
+
 .linkpagetitle, .index-split-title {
   text-align: center;
 }
