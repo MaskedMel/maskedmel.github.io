@@ -346,6 +346,7 @@ td {
     bottom: 0;
     width: 100%;
     height: auto;
+Z-index: 99;
   }
 
   .navcontainer {
